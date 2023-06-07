@@ -1,0 +1,191 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: linear-gradient(#082032, #2c394b);
+  margin: 0px 50px;
+  padding: 0;
+}
+
+.logo {
+  margin-top: 23px;
+  text-decoration: none;
+  align-items: center;
+  font-family: "Lobster";
+  font-size: 40px;
+  color: #dde6ed;
+}
+
+header {
+  margin: 0;
+}
+
+.navbar {
+  position: fixed;
+  margin-top: 0px;
+  backdrop-filter: blur(2px);
+  right: 50px;
+  left: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+main {
+  margin-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+  color: #dde6ed;
+  z-index: 1;
+  overflow-y: hidden;
+}
+
+.gambar {
+  display: block;
+  width: 130px;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nama {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.deskripsi {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+h3,
+h2 {
+  font-size: 30px;
+}
+
+.about {
+  margin-top: 40px;
+  padding: 0;
+}
+
+.about-me {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.desabout {
+  margin: 0;
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.hobbies h3 {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.container {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  grid-template-columns: auto auto auto;
+}
+
+.item-flex img {
+  margin: 0px;
+  padding: 0px;
+  width: 250px;
+}
+
+.container p {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.kontak h3 {
+  font-size: 25px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.kontak a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #dde6ed;
+}
+
+.kontak a img {
+  margin-right: 5px;
+  margin-left: 0;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 30px;
+}
+
+footer {
+  color: #effaff99;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 100px) {
+  .navbar {
+    visibility: hidden;
+  }
+  footer {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 222px) {
+  .gambar {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0 50px;
+  }
+  .navbar {
+    left: 50px;
+  }
+  .logo {
+    font-size: 35px;
+  }
+  main {
+    top: 600px;
+  }
+  .nama {
+    font-size: 35px;
+  }
+  .deskripsi {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  .about-me {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .desabout {
+    margin-top: 5px;
+    padding: 0;
+  }
+  .hobbies h2 {
+    margin-top: 10px;
+  }
+}
